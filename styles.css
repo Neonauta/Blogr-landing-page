@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+html{
+    font-size: 62.5%;
+    font-family: 'Ubuntu';
+
+}
+
+body{
+    margin: 0; /*0 0 0 0 izquierda derecha arriba abajo*/
+    padding: 0;
+}
+
+button:hover{ /*Para que se ponga la manita cuando el cursor esta encima de los botones.*/
+    cursor: pointer;
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto; /*arriba-abajo izquierda-derecha*/
+}
+
+.Logo{
+   height: max-content;
+   align-self: center;
+}
+
+.btn_principal{
+    color: hsl(356, 100%, 66%);
+    font-weight: bold; /*Peso de la fuente.*/
+    background-color: white;
+    font-size: 2rem;
+    border: none;
+    border-radius: 5rem;
+    padding: 1rem 3rem;
+    transition: 0.5s;
+}
+
+.btn_principal:hover{ /*Con este definó cómo cambia el estilo del botón cuando el usuario tiene el cursor encima del mismo.*/
+    background-color: hsl(356, 100%, 74%);
+    color: white;
+    transition: 0.5s;
+
+}
+
+.btn_secundario{
+    background: transparent;
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    transition: 0.5s;
+    color: white;
+}
+
+.btn_secundario:hover{ /*Con este definó cómo cambia el estilo del botón cuando el usuario tiene el cursor encima del mismo.*/
+    color: hsl(356, 100%, 66%);
+    font-weight: bold; /*Peso de la fuente.*/
+    background-color: white;
+    font-size: 2rem;
+    border: none;
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+    transition: 0.5s;
+}
+
+.hero{ /*Con esto hago referencia al header que lo llame hero como clase.*/
+    background: rgb(255,141,112);
+    background: linear-gradient(90deg, rgba(255,141,112,1) 0%, rgba(255,61,84,1) 100%);
+    color: white; /*Color de los textos en el header.*/
+    height: 70vh; /*Altura que ocupa el backround del gradiente que se hizo.*/
+    border-radius: 0 0 0 10rem;
+}
+
+.nav_bar{
+    padding-top: 2rem; /*padding es el contenido de un elemento y el borde o bordes de nuestros elementos.*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 15rem;
+}
+
+.right_nav{
+    display: flex;
+    gap: 10rem;
+}
+
+.Login{
+    color: white;
+    font-weight: bold; /*Peso de la fuente.*/
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+.menu{
+    font-size: 2rem;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    list-style: none; /*Le quito los puntos de lista.*/
+    gap: 2rem;
+}
+
+.menu li{
+    display: flex;
+    align-self: center;
+    gap: 1rem;
+}
+
+.menu li img{
+    height: max-content;
+    align-self: center;
+}
+
+.menu li:hover{
+    cursor: pointer;
+}
+
+.hero_buttons{
+    gap: 6rem;
+    display: flex;
+    align-self: center;
+}
+
+
+.hero_content{
+    margin: 15rem;
+    display: flex;
+    flex-direction: column; /*Pone en columna los elementos.*/
+    text-align: center;
+    align-self: center;
+    gap: 0rem;
+}
+
+.hero_content h1 {
+    font-size: 4rem;
+}
+
+
+
