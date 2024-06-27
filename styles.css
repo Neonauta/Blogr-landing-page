@@ -17,6 +17,8 @@ button:hover{ /*Para que se ponga la manita cuando el cursor esta encima de los 
 .container{
     max-width: 80%;
     margin: 0 auto; /*arriba-abajo izquierda-derecha*/
+    position: relative;
+    z-index: 1;
 }
 
 .Logo{
@@ -72,10 +74,22 @@ button:hover{ /*Para que se ponga la manita cuando el cursor esta encima de los 
     border-radius: 0 0 0 10rem;
 }
 
+.hero_icon{
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    background: url(./images/bg-pattern-intro-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
 .nav_bar{
     padding-top: 2rem; /*padding es el contenido de un elemento y el borde o bordes de nuestros elementos.*/
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
 }
 
 .left_nav{
@@ -140,7 +154,12 @@ button:hover{ /*Para que se ponga la manita cuando el cursor esta encima de los 
 
 .hero_content h1 {
     font-size: 4rem;
+    margin: 0;
 }
 
+.hero_content p{
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
 
 
